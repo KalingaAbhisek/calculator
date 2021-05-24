@@ -88,8 +88,30 @@ class _calculatorState extends State<calculator> {
                     children: [
                       MaterialButton(
                         padding: EdgeInsets.all(0.0),
-                        minWidth: 160.0,
-                        height: 70.0,
+                        minWidth: 75.0,
+                        height: 75.0,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(22.0)),
+                        color: Color(0xFFB58A589),
+                        onPressed: () {
+                          setState(() {
+                            result = c.buttonPressed('+/-');
+                          });
+                        },
+                        child: Text("+/-",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                fontSize: 25.0,
+                                fontFamily: 'Sans Sheriff',
+                                color: Colors.white)),
+                      ),
+                      SizedBox(
+                        width: 15.0,
+                      ),
+                      MaterialButton(
+                        padding: EdgeInsets.all(0.0),
+                        minWidth: 118.0,
+                        height: 75.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(22.0)),
                         color: Color(0xFFB58A589),
@@ -110,8 +132,8 @@ class _calculatorState extends State<calculator> {
                       ),
                       MaterialButton(
                         padding: EdgeInsets.all(0.0),
-                        minWidth: 160.0,
-                        height: 70.0,
+                        minWidth: 118.0,
+                        height: 75.0,
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(22.0)),
                         color: Color(0xFFB58A589),
