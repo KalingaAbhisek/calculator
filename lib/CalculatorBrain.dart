@@ -10,15 +10,6 @@ class CalculatorBrain {
   String resultOperationText = ''; //store  operation result below output text
   bool isPressedPercentageButton = true; //determine percentage button state
 
-  void clear() {
-    num1 = 0;
-    num2 = 0;
-    operator = '';
-    output = '';
-    resultOperationText = '';
-    isPressedPercentageButton = true;
-  }
-
   String buttonPressed(String buttonText) {
     if (buttonText == 'AC') {
       _output = '';
